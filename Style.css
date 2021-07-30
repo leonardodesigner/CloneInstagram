@@ -1,0 +1,246 @@
+* {
+padding:0;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
+font-family: sans-serif;
+font-size: 14px;
+}
+body{
+width: 100%;
+min-height: 100vh;
+background-color: rgb(235, 235, 235);
+display: flex;
+margin: 0;
+padding: 0;
+justify-content: center;
+
+
+}
+.InstagramRootMenu{
+    
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    width: 60%;
+    height: 100vh;
+}
+
+.PhoneBox{
+    display: flex;
+    align-items: center;
+    flex-direction: line;
+    justify-content:center;
+    width: 5%;
+    
+    
+}
+
+.PhoneBox img{
+height: 35rem; /* Todas as Imagens contidas no container Phone Box serão redimensionadas */
+
+}
+
+.ImgTransitionBox{
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    
+    
+   
+}
+
+.ImgTransitionBox img{
+
+    
+    height: 41rem; 
+    
+
+}
+
+
+
+.ImgTransition {
+    display:contents;
+    align-items: center;
+    align-content: center;
+    
+  }
+
+  .ImgTransition img {
+    position:absolute;
+   
+    height: auto;
+
+    
+    
+    
+  }
+
+  @keyframes ImgTransitionFadeInOut {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+  }
+
+  .ImgTransition img:nth-of-type(2) {
+   
+    animation-name: ImgTransitionFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
+     
+  }
+  .ImgTransition img:nth-of-type(3) {
+   
+    animation-name: ImgTransitionFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+     
+  }
+
+
+.LoginPanelRoot{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.Group{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem;
+    border: 1px solid lightgrey;
+}
+
+.Group:nth-child(1){
+
+    min-height: 19rem;
+}
+
+.InstagramLogoImg{
+    height: 3rem;
+}
+
+.ProfilePhoto{
+
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 6rem;
+}
+
+.LoginInstagram
+{
+    background-color: rgb(0, 102, 255);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    border: hidden;
+}
+
+.LogoutInstagram{
+    color:#0095f6;
+    margin-top: 1rem;
+    background-color: rgba(243, 243, 243, 0);
+    border: hidden;
+}
+
+.NotAccount{
+    color: rgb(161, 161, 161);
+}
+
+.Link{
+    color: #0095f6;
+}
+
+.GetTheApp{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.DownloadAtBox{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+
+.GetAppBTN{
+
+    display: flex;
+    height: 3rem;
+    width: 10rem;
+    justify-content: space-evenly;
+    align-items: center;
+    border: transparent;
+    background-color: transparent;
+}
+
+.GetAppBTN img{
+  max-width: 100%;  
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+    
+}
+
+@media (max-width: 1575Px){
+
+    .InstagramRootMenu{ width: 80%;}
+    .PhoneBox { display: none; }
+}
+
+
+
+@media (max-width: 1200Px){
+
+    body{background-color: white;}
+
+    .InstagramRootMenu{ width: 90%;}
+
+    .ImgTransitionBox { display: none; }
+
+    .PhoneBox { display: none; }
+
+    .LoginPanelRoot{ width: 100%; }
+
+    .Group{border: 1px solid transparent;}
+
+    
+}
+
